@@ -10,17 +10,17 @@ public class Main {
         System.out.println(ret);
     }
 
-    public static String MakeFormula(){
+    public static String MakeFormula() {
         StringBuilder build = new StringBuilder();
         int count = (int) (Math.random() * 2) + 1; // generate random count
         int start = 0;
         int number1 = (int) (Math.random() * 99) + 1;
         build.append(number1);
-        while (start <= count){
+        while (start <= count) {
             int operation = (int) (Math.random() * 3); // generate operator
             int number2 = (int) (Math.random() * 99) + 1;
             build.append(op[operation]).append(number2);
-            start ++;
+            start++;
         }
         return build.toString();
     }
